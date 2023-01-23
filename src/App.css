@@ -1,38 +1,138 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.text-th{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.text-th-bold {
+  font-weight: 600;
+}
+
+.letter-spacing{
+  letter-spacing: 1.5px;
+}
+
+.th-title{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 32px;
+  color: black;
+}
+
+.th-subtitle{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.08em;
+  color: #D2D2D2;
+}
+
+.th-extra{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #838383;
+  border-bottom: 1px solid;
+  border-color: #B3DBBA;
+  padding-bottom: 0.15rem;
+}
+
+.th-extra:hover {
+  color: #505050;
+  border-color: #99fbab;
+}
+
+.th-item-title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 50px;
+  letter-spacing: 0.19em;
+  color: #FFFFFF;
+}
+
+#modal{
+  transition: ease-in-out;
+  transition-duration: 250ms;
+}
+
+.th-modal{
+  background-color: rgb(221, 221, 221);
+}
+
+.th-modal-title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.th-modal-subtitle{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.th-modal-text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.color-overlay img{
+  filter: grayscale(1);
+  transition: 0.5s ease;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #8feca078;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.color-overlay:hover .overlay{
+  opacity: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.color-overlay:hover img{
+  filter: grayscale(0.7);
+  transform: scale(1.025);
 }
